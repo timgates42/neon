@@ -180,7 +180,7 @@ class MBoxLoss(NervanaObject):
             loc_diff[self.inds_more] = np.sign(loc_diff[self.inds_more])
 
             # backprop the loc loss
-            # sclae the loc_predictions by num_matches
+            # scale the loc_predictions by num_matches
             loc_diff /= float(num_matches)
 
             count = 0
